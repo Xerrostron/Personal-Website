@@ -12,3 +12,6 @@ header{
     text-align: center;
     font-size: x-large;
 }
+br{
+    max-width: 400px;
+}
