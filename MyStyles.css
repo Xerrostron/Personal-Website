@@ -16,5 +16,7 @@ hr{
     max-width: 400px;
 }
 footer{
-    background-color: blue;
+    /* Red, Green, Blue , alpha (transparency */
+    background-color: rgba(173, 216, 230, 0.5);
+    max-width: 400px;
 }
