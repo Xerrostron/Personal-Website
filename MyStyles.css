@@ -19,5 +19,8 @@ footer{
     /* Red, Green, Blue , alpha (transparency */
     background-color: rgba(173, 216, 230, 0.5);
     max-width: 400px;
-    text-align: center;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered inside any child elements */
 }
