@@ -24,11 +24,12 @@ footer{
 #title{
     font-size: 32pt;
 }
+/* Apply this to the li elements, not ul*/
 #pageTop{
     display: inline-block;
     /* Removes the bullet points */
     list-style-type: none;
     margin: auto;
     /*Adds space between the elements in the list */
-    gap: 20px;
+    gap: 60px;
 }
