@@ -26,4 +26,9 @@ footer{
 }
 #pageTop{
     display: inline-block;
+    /* Removes the bullet points */
+    list-style-type: none;
+    margin: auto;
+    /*Adds space between the elements in the list */
+    gap: 20px;
 }
