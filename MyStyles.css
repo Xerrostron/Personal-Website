@@ -39,4 +39,5 @@ footer{
 main > p{
     max-width: 400px;
     margin: auto;
+    justify-content: left;
 }
