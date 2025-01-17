@@ -10,7 +10,6 @@ main{
 header{
     font-family:sans-serif, Arial, Helvetica;
     text-align: center;
-    font-size: x-large;
 }
 hr{
     max-width: 400px;
@@ -21,4 +20,7 @@ footer{
     max-width: 400px;
     text-align: center;
     margin: auto;
+}
+#title{
+    font-size: x-large;
 }
