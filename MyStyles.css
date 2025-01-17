@@ -39,7 +39,7 @@ main > p{
     text-align: left;
 }
 main > h1{
-    text-align: left;
+    text-align: center;
     margin:auto;
     max-width: 400px;
 }
