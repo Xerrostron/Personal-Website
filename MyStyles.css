@@ -8,12 +8,12 @@ header{
     text-align: center;
 }
 hr{
-    max-width: 400px;
+    max-width: 1200px;
 }
 footer{
     /* Red, Green, Blue , alpha (transparency */
     background-color: rgba(173, 216, 230, 0.5);
-    max-width: 400px;
+    max-width: 1200px;
     text-align: center;
     margin: auto;
 }
@@ -33,7 +33,7 @@ footer{
     /*gap only works for flex!*/
 }
 main > p{
-    max-width: 400px;
+    max-width: 1200px;
     margin: auto;
     justify-content: left;
     text-align: left;
@@ -41,5 +41,5 @@ main > p{
 main > h1{
     text-align: center;
     margin:auto;
-    max-width: 400px;
+    max-width: 1200px;
 }
