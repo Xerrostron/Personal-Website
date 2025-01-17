@@ -24,3 +24,6 @@ footer{
 #title{
     font-size: x-large;
 }
+#pageTop{
+    display: inline-block;
+}
