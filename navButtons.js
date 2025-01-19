@@ -55,8 +55,65 @@ function loadBrowsePage()
         button.setAttribute("class", "blog-title");
         mainBlock.appendChild(button); 
         mainBlock.appendChild(document.createElement("br"));
+        //now have buttons: blog-title class name
+        const titleButtons = document.querySelectorAll(".blog-title");
+        titleButtonFunctionality(titleButtons);
     });
 
+}
+function titleButtonFunctionality(titleButtons)
+{
+    titleButtons.forEach(titleButton=>{
+        titleButton.addEventListener("click", function()
+        {
+            const titleButtonContent = titleButton.textContent;
+            loadBlogPost(titleButtonContent);
+
+        });
+    
+    });
+}
+function loadBlogPost(title)
+{
+    for(let i = 0; i<blogPosts.length; ++i)
+    {
+        if(title===blogPosts[i].title)
+        {
+             //NOTE: innterHTML does NOT ACTIVATE A SCRIPT!
+          const contentDiv = document.querySelector(".blogPost");
+          contentDiv.innerHTML = 
+            `
+            <main>
+           </main>
+            `;
+           
+           const mainBlock = contentDiv.querySelector("main");
+           const header = document.createElement("h1");
+           header.textContent = blogPosts[i].title;
+           mainBlock.append(header);
+           const paragraphs = processParagraphs(blogPosts[i]);
+           //use J for an inner array
+           for(let j = 0; j< paragraphs.length;++j)
+           {
+                mainBlock.appendChild(paragraphs[j]);
+           }
+
+        }
+    }
+}
+function processParagraphs(post)
+{
+    const HTMLArray =[]; //can i make an Array of HTML elements?
+    for(let i =0; i<post.paragraphs.length;++i)
+    {
+        let pElement = document.createElement("p");
+        //USE INNER HTML VS. JUST TEXTCONTENT TO RENDER IN-LINE HTML!
+        pElement.textContent = post.paragraphs[i];
+        console.log(post.paragraphs[i]);
+        
+        HTMLArray.push(pElement);
+    }
+    return HTMLArray;
 }
 const blogPosts =[{
     paragraphs:["Hello my friend!", "Awesome stuff you have here!"],
