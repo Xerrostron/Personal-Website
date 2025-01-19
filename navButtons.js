@@ -16,12 +16,39 @@ buttons.forEach(button => {
     {
         loadBrowsePage();
     }
+    if(value==="Home")
+    {
+        loadHomePage();
+    }
     else{
         console.log("Unknown value.");
     }
 });
 });
-
+function loadHomePage()
+{
+    const contentDiv = document.querySelector(".blogPost");
+    contentDiv.innerHTML =
+     `
+         <main>
+         <h1>
+            Click the Buttons to Navigate the Blog!
+         </h1>
+         <h>
+            Browse
+            <p>Browse blog posts and find something nice to read.</p>
+         </h>
+         <h>
+            About
+            <p>Read about the blog's history and purpose.</p>
+         </h>
+         <h>
+            Home
+            <p>Return back to this page.</p>
+         </h>
+        </main>
+     `;
+}
 function loadAboutPage()
 {
     const contentDiv = document.querySelector(".blogPost");
