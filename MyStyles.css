@@ -75,4 +75,23 @@ html{
   .navButton{
     font-size: 24pt;
   }
+  .blog-title{
+    font-size: 20pt;
+    border: none;
+    background: none;
+    text-align:center;
+    padding-left: 20%;
+  }
+  .blog-title:link{
+    color: red;
+  }
+  .blog-title:visited{
+    color:orange;
+  }
+  .blog-title:hover{
+    color:pink;
+  }
+  .blog-title:active{
+    color:purple;
+  }
   /*Order matters for this pseudo selector!*/
